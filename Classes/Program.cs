@@ -9,8 +9,9 @@ namespace Classes
     internal class Program
     {
 
-        static Player player = new Player("Test", 10, 2, 0);
-        static Enemy slime = new Enemy("Slime", 5, 1, 5);
+        static Player player = new Player("Test", 10, 3, 0);
+        static Enemy slime = new Enemy("Slime", 2, 1, 5);
+        static Enemy goblin = new Enemy("Goblin", 6, 2, 10);
 
         static void Main(string[] args)
         {
@@ -19,9 +20,9 @@ namespace Classes
             player.Print();
             player.Fight(slime);
             player.Print();
-            player.Fight(slime);
+            player.Fight(goblin);
             player.Print();
-            player.Fight(slime);
+            player.Fight(goblin);
             player.Print();
 
             Console.WriteLine("Press any key to close");
